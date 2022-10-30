@@ -1,0 +1,54 @@
+
+
+<form  #userform="ngForm" action="action_page.php" method="post" (ngSubmit)="paySubmit()">
+
+    <h3>Online Payment</h3>
+    <div class="payment">
+
+
+        <br><br><br><br><br><br>
+        <div class="container">
+            <label for="Cardnumber"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="otp" required="ngModel" [(ngModel)]="otp.recipient">
+            <label for="Cardnumber"><b>Card Number</b></label>
+            <input type="text" placeholder="Enter Card Number" name="Cardnumber" required="ngModel" [(ngModel)]="payment.cardNumber">
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter name as per card" name="name" required="ngModel" [(ngModel)]="payment.cardName">
+
+            <label for="cvv"><b>CVV</b></label>
+            <input type="text" placeholder="Enter CVV" name="cvv" required="ngModel" [(ngModel)]="payment.cvv"><br><br>
+
+
+            <label for="Expirydate"><b>Expiry Date</b></label>
+            <input type="date" name="name" required="ngModel" [(ngModel)]="payment.expiry">
+
+
+
+
+        </div>
+
+        <div class="container" style="background-color:#fffcfc">
+            <button type="submit" class="paymentbtn">Proceed to Payment</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+
+        </div>
+    </div>
+</form>
+<br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<form #userform="ngForm" *ngIf="this.pa" (ngSubmit)="checkOtp()">
+    <div class="otp">
+    <div class="container">
+        <label for="Cardnumber"><b>Otp</b></label>
+        <input type="text" placeholder="Enter Otp" name="Cardnumber" required="ngModel" [(ngModel)]="this.otpc">
+    </div>
+    <div class="container" style="background-color:#fffcfc">
+        <button type="submit" class="paymentbtn">Submit Otp</button>
+        
+
+    </div>
+</div>
+</form>

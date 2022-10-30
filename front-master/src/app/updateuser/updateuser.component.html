@@ -1,0 +1,21 @@
+<form [formGroup]="editUser" (ngSubmit)="collection()">
+  <div id="form_login">
+      <div class="formclass">
+          <p class="reghead">Update User Details</p>
+          <input class="inputelement" type="number" name="id" formControlName="id" placeholder="id"><br>
+          <input class="inputelement" type="text" name="username" formControlName="username" placeholder="Username"><br>
+          <input class="inputelement" type="text" name="password" formControlName="password" placeholder="Password"><br>
+          <input class="inputelement" type="text" name="address" formControlName="address" placeholder="address"><br>
+          <input class="inputelement" type="text" name="phone" formControlName="phone" placeholder="phone"><br>
+          <input class="inputelement" type="text" name="role" formControlName="role" placeholder="role"><br>
+          <button class="btn btn-success" id="just" type="submit">Update</button><br>
+      </div>
+  </div>
+</form>
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+
+

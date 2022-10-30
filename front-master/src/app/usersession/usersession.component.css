@@ -1,0 +1,29 @@
+a{
+    color:#ffff;
+}
+
+.model{
+    display:flex;
+    gap: 3%;
+    
+}
+
+.modify{
+    margin-left:20px;
+    color:black
+}
+
+.main{
+    margin-left:20px;
+}
+
+/*.main ul{
+    padding:0;
+    margin:0;
+    float:right;
+    
+}*/
+
+#col{
+    color: black;
+}
